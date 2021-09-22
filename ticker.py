@@ -11,7 +11,7 @@ from time import sleep
 API_ENDPOINT = "https://query1.finance.yahoo.com/v7/finance/quote?lang=en-US&region=US&corsDomain=finance.yahoo.com"
 FIELDS = ','.join(map(str, ["symbol", "marketState", "displayName", "regularMarketPrice", "regularMarketChange", "regularMarketChangePercent", "preMarketPrice",
 "preMarketChange", "preMarketChangePercent", "postMarketPrice", "postMarketChange", "postMarketChangePercent"]))
-STOCKS_SET_DIR = "~/VSCode/StockTicker/stocks"
+STOCKS_SET_DIR = "/home/corp/kcropley/VSCode/StockTicker/stocks/"
 
 def main():
     args = getArgs()
@@ -77,8 +77,6 @@ def getDataFromMarket(symbols: list):
         return response.json()["quoteResponse"]["result"]
     else:
         return [] # Return an empty array to signal an error occured
-
-    print (response.json()["quoteResponse"]["result"])
 
 def getArgs():
     parser = argparse.ArgumentParser(prog=__file__)
