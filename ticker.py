@@ -30,7 +30,6 @@ def main():
         while True:
             updateAndDisplayStocks(stockSets, args.clearScreen, args.updateTime)
         
-
 def updateAndDisplayStocks(stockSets: list, clearScreen: bool = False, updateTime: int = 0):
     for currStockSet in stockSets:
         currStockSet.updateAllStocks(getDataFromMarket(currStockSet.getSymbols()))
