@@ -1,0 +1,26 @@
+{
+    "name": "Example Stocks",
+    "displayShares": true,
+    "stocks": [
+        {
+            "symbol": "NVDA",
+            "shareOriginalValue": 75,
+            "shareCount": 10
+        },
+        {
+            "symbol": "SNE",
+            "shareOriginalValue": 70,
+            "shareCount": 20
+        },
+        {
+            "symbol": "PFE",
+            "shareOriginalValue": 35,
+            "shareCount": 10
+        },
+        {
+            "symbol": "WORK",
+            "shareOriginalValue": 25,
+            "shareCount": 10
+        }
+    ]
+}

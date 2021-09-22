@@ -1,0 +1,9 @@
+{
+    "name": "Watch list",
+    "displayShares": false,
+    "stocks": [
+        {
+            "symbol": "AMD"
+        }
+    ]
+}

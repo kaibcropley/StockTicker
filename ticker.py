@@ -11,7 +11,7 @@ from time import sleep
 API_ENDPOINT = "https://query1.finance.yahoo.com/v7/finance/quote?lang=en-US&region=US&corsDomain=finance.yahoo.com"
 FIELDS = ','.join(map(str, ["symbol", "marketState", "displayName", "regularMarketPrice", "regularMarketChange", "regularMarketChangePercent", "preMarketPrice",
 "preMarketChange", "preMarketChangePercent", "postMarketPrice", "postMarketChange", "postMarketChangePercent"]))
-STOCKS_SET_DIR = "/home/corp/kcropley/VSCode/shell_scripts/stocks/"
+STOCKS_SET_DIR = "~/VSCode/StockTicker/stocks"
 
 def main():
     args = getArgs()
